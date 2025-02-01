@@ -1,17 +1,60 @@
 <!DOCTYPE html>
 <html>
+<meta charset="utf-8">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Hello Coursera!</title>
 </head>
+<style>
+ul{  
+
+	list-style-type:none;/* will remove the bullet list*/
+	margin:0;/* remove browser default settings*/
+	padding:0;/* remove browser default settings*/
+	background-color: #dddddd;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+li{/* to create a horizontal nav bar*/
+
+	display: inline;
+	float: left;
+}
+
+li a{ 
+	display: block;/* displaying the links as block elements makes the whole link area clickable */
+	color:white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {/*Change the link color on hover*/
+
+	background-color: #555;
+	color: white;
+}
+
+.active{
+   background-color: #04AA6D;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+</style>
 <body>
-	<h1>My First Page</h1>
-	<form action="action.php" method="POST">
-		<div><label>Name:</label>
-		<input type="text" size="10px" name="fname">
-		</div><br />
-		<div><button type="submit" name="btnSave">Save</button></div>
-	</form>
+<ul class="active">
+	<li style="float: right;"><a href="login.html" >Login</a></li>
+	<li style="float: right;"><a href="#">About me</a></li>
+	<li style="float: right;"><a href="#">Contact us</a></li>
+	<li style="float: right;"><a href="#">Home</a></li>
+</ul>
 </body>
 </html>
